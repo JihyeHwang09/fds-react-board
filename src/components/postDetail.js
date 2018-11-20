@@ -30,3 +30,6 @@ export default class PostDetail extends Component {
     )
   }
 }
+
+
+
