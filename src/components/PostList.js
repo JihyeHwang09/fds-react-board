@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import api from '../api';
+import Layout from './Layout';
 
 export default class PostList extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ export default class PostList extends Component {
      // App에서 내려준 onPostDetaiPage, onNewPostFormPage를 분해대입으로 받음
     const {onPostDetailPage, onNewPostFormPage} = this.props
     return (
-      <div>
+      <Layout title="게시물 목록">
         <button onClick={() => onNewPostFormPage()}>새 글 쓰기</button>
         <h1>게시물 목록</h1>
         <ul>
@@ -31,7 +32,7 @@ export default class PostList extends Component {
             <li key={post.id} onClick={() => onPostDetailPage(post.id)}>{post.title}</li>
           ))}
         </ul>
-      </div>
+      </Layout>
     )
   }
 }
