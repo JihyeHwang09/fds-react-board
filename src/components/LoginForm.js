@@ -18,7 +18,15 @@ export default class LoginForm extends React.Component {
       password
     })
     localStorage.setItem('token', res.data.token)
+
+    // await 붙이면 실행될때까지 기다려주는 것
+
+    // '/me'경로로 get 요청 보내면, 유저 정보를 받음
+
+
+
     // TODO: 게시글 목록 보여주기
+
   }
 // form을 안쓰면서 DOM객체를 만지기 위해선 꼭 ref 사용!
 //(e.target.elements는 form 내장기능임)
