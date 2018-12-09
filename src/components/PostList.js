@@ -3,7 +3,7 @@ import api from '../api';
 import Layout from './Layout';
 
 // import 작성해야함
-import {UserConsumer} from .........
+// import {UserConsumer} from .........
 
 export default class PostList extends Component {
   constructor(props) {
